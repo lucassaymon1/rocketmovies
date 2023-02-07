@@ -14,6 +14,19 @@ const GlobalStyle = createGlobalStyle`
     font-size: 16px;
 
     background-color: #1C1B1E;
+    ::-webkit-scrollbar{
+      width: 8px;
+    }
+    ::-webkit-scrollbar-track{
+      background-color: transparent;
+      margin-left: -50px;
+      margin-block: 8px;
+    }
+    ::-webkit-scrollbar-thumb{
+      background-color: ${({theme})=> theme.COLORS.PINK};
+      border-radius: 8px;
+
+    }
   }
 
   h2 {
@@ -48,9 +61,20 @@ const GlobalStyle = createGlobalStyle`
 
   main{
     text-align: justify;
-    margin: 46px 91px 130px 123px;
+    padding: 46px 91px 130px 123px;
     color: hsla(25, 35%, 93%, 1);
-    max-width: 85%;
+    ::-webkit-scrollbar{
+      width: 8px;
+    }
+    ::-webkit-scrollbar-track{
+      background-color: transparent;
+      margin-left: -50px;
+      margin-block: 8px;
+    }
+    ::-webkit-scrollbar-thumb{
+      background-color: ${({theme})=> theme.COLORS.PINK};
+      border-radius: 8px;
+    }
   }
   
 `
